@@ -10,6 +10,7 @@
     var rankCode = params.get('c');
     var issuer = params.get('i');
     var expiryDate = params.get('d');
+    var heightIn = Math.round(height/2.54);
     
    function writeHTML(){
     document.getElementById("photo").innerHTML = "<img src='" + pic + "' class='idPhoto'/>";
@@ -18,6 +19,7 @@
     document.getElementById("rankCode").innerHTML =  + rankCode;
     document.getElementById("cardExpiry").innerHTML =  + expiryDate;
     document.getElementById("height").innerHTML =  + height;
+    document.getElementById("heightIn").innerHTML =  + heightIn;
   
    }
   </script>
