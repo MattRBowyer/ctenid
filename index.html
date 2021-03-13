@@ -14,10 +14,11 @@
    function writeHTML(){
     document.getElementById("photo").innerHTML = "<img src='" + pic + "' class='idPhoto'/>";
     document.getElementById("idName").innerHTML =  idName;
-    document.getElementById("rank").innerHTML =  + rankFull;
+    document.getElementById("rankFull").innerHTML =  + rankFull;
     document.getElementById("rankCode").innerHTML =  + rankCode;
     document.getElementById("cardExpiry").innerHTML =  + expiryDate;
-    
+    document.getElementById("height").innerHTML =  + height;
+  
    }
   </script>
   
@@ -59,7 +60,7 @@
      <table>
          <tr>
             <td>Rank:</td>
-           <td><span id="rank"></span> (<span id="rankCode">)</span></td>
+           <td><span id="rankFull"></span> (<span id="rankCode"></span>)</td>
         </tr>
             <tr>
             <td>Name:</td>
