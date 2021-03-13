@@ -1,7 +1,10 @@
 <head>
   <title>CTEN ID</title>
   <script>
-    var p = new URL(window.location);
+    var url = new URL(window.location);
+    var params = new URLSearchParams(url.search);
+    var p = params.getAll('p')
+    
    function myFunction(){
     document.getElementById("demo").innerHTML = p;
    }
