@@ -15,14 +15,28 @@
     var heightM =     Math.round(height/10)/10;
     var heightF =     Math.floor(heightIn/12);
     var titleText;
+    var mainColour;
+    var backColour;
     
     
    function writeHTML(){
      
     if (issuer == "af") {
       titleText = "GREGASIAN AIR FORCE";
-    } else {
+      mainColour = "#c9daf8";
+      backColour = "#c9daf8";
+    } else if (issuer == "n") {
       titleText = "GREGASIAN NAVY";
+      mainColour = "#c9daf8";
+      backColour = "#c9daf8";
+    } else if (issuer == "a") {
+      titleText = "GREGASIAN ARMY";
+      mainColour = "#c9daf8";
+      backColour = "#c9daf8";
+    }else if (issuer == "cs") {
+      titleText = "GREGASIAN MINISTRY OF DEFENCE";
+      mainColour = "#c9daf8";
+      backColour = "#c9daf8"; 
     }
      
      
@@ -45,7 +59,7 @@
   
   <style>
      body{
-       font-size:3em;
+       font-size:48px;
        font-family:arial;
     }
     
@@ -62,7 +76,7 @@
     }
     
     .contentBox{
-      font-size:3em;
+      font-size:36px;
     }
     
     .idPhoto{
