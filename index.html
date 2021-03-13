@@ -14,9 +14,18 @@
     var heightIn =    Math.round(height/2.54);
     var heightM =     Math.round(height/10)/10;
     var heightF =     Math.floor(heightIn/12);
+    var titleText;
     
     
    function writeHTML(){
+     
+    if (issuer == "af") {
+      titleText = "GREGASIAN AIR FORCE";
+    } else {
+      titleText = "GREGASIAN NAVY";
+    }
+     
+     
     document.getElementById("photo").innerHTML =        "<img src='" + pic + "' class='idPhoto'/>";
     document.getElementById("idName").innerHTML =       idName;
     document.getElementById("rankFull").innerHTML =     rankFull;
@@ -26,6 +35,11 @@
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
     document.getElementById("serviceNo").innerHTML =    serviceNo;  
+    document.getElementById("titleBox").innerHTML =     titleText;
+     
+    
+     
+     
    }
   </script>
   
@@ -64,7 +78,7 @@
 </head>
 
 <body onload="writeHTML()">
-  <div id="title" class="titleBox">GREGASIAN MININSTRY OF THE INTERIOR</div>
+  <div id="titleBox" class="titleBox">GREGASIAN MININSTRY OF THE INTERIOR</div>
   <div id="photo" class="contentBox">
   </div>
 
