@@ -3,7 +3,8 @@
   <script>
     var url = new URL(window.location);
     var params = new URLSearchParams(url.search);
-    var p = params.getAll('p')
+    var p = params.get('p');
+    var n = params.get('n');
     
    function myFunction(){
     document.getElementById("photo").innerHTML = "<img src='" + p + "' />";
