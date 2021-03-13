@@ -1,18 +1,19 @@
 <head>
   <title>CTEN ID</title>
   <script>
-    var url = new URL(window.location);
-    var params = new URLSearchParams(url.search);
-    var pic = params.get('p');
-    var idName = params.get('n');
-    var height = params.get('h');
-    var rankFull = params.get('r');
-    var rankCode = params.get('c');
-    var issuer = params.get('i');
-    var expiryDate = params.get('d');
-    var heightIn = Math.round(height/2.54);
-    var heightM = Math.round(height/10)/10;
-    var heightF = Math.floor(heightIn/12);
+    var url =         new URL(window.location);
+    var params =      new URLSearchParams(url.search);
+    var pic =         params.get('p');
+    var idName =      params.get('n');
+    var height =      params.get('h');
+    var rankFull =    params.get('r');
+    var rankCode =    params.get('c');
+    var issuer =      params.get('i');
+    var expiryDate =  params.get('d');
+    var serviceNo =   params.get('s');
+    var heightIn =    Math.round(height/2.54);
+    var heightM =     Math.round(height/10)/10;
+    var heightF =     Math.floor(heightIn/12);
     
     
    function writeHTML(){
@@ -24,7 +25,7 @@
     document.getElementById("heightM").innerHTML =      heightM;
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
-  
+    document.getElementById("serviceNo").innerHTML =    serviceNo;  
    }
   </script>
   
@@ -87,7 +88,10 @@
             <td>Card expiry date:</td>
             <td><span class="dataEntry" id="cardExpiry"></span></td>
         </tr>  
-     
+                    <tr>
+            <td>Card expiry date:</td>
+            <td><span class="dataEntry" id="serviceNo"></span></td>
+        </tr>      
 
   </div>
   
