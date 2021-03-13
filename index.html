@@ -11,6 +11,7 @@
     var issuer = params.get('i');
     var expiryDate = params.get('d');
     var heightIn = Math.round(height/2.54);
+    var heightM = Math.round(height/10)/10;
     
    function writeHTML(){
     document.getElementById("photo").innerHTML = "<img src='" + pic + "' class='idPhoto'/>";
@@ -18,7 +19,7 @@
     document.getElementById("rankFull").innerHTML =  + idName;
     document.getElementById("rankCode").innerHTML =  + rankCode;
     document.getElementById("cardExpiry").innerHTML =  + expiryDate;
-    document.getElementById("height").innerHTML =  + height;
+    document.getElementById("heightM").innerHTML =  + heightM;
     document.getElementById("heightIn").innerHTML =  + heightIn;
   
    }
@@ -76,7 +77,7 @@
        
                    <tr>
             <td>Height:</td>
-            <td><span class="dataEntry" id="height"></span>cm (<span id="heightIn"></span>in)</td>
+            <td><span class="dataEntry" id="heightM"></span>m (<span id="heightIn"></span>in)</td>
         </tr>  
        
                    <tr>
