@@ -5,10 +5,15 @@
     var params = new URLSearchParams(url.search);
     var p = params.get('p');
     var n = params.get('n');
+    var h = params.get('h');
+    var r = params.get('r');
+    var c = params.get('c');
+    var m = params.get('m');
     
    function myFunction(){
     document.getElementById("photo").innerHTML = "<img src='" + p + "' class='idPhoto'/>";
     document.getElementById("idname").innerHTML = "Name:" + n;
+     document.getElementById("rank").innerHTML = "Name:" + r;
    }
   </script>
   
@@ -42,6 +47,9 @@
   </div>
   <div id="idname" class="contentBox">
   </div>
-  
+   <div class="contentBox">
+     <span id="rank">
+     </span>
+  </div>
   
 </body>
