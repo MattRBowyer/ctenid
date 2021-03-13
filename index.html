@@ -7,10 +7,28 @@
     var n = params.get('n');
     
    function myFunction(){
-    document.getElementById("photo").innerHTML = "<img src='" + p + "' />";
+    document.getElementById("photo").innerHTML = "<img src='" + p + "' class='idPhoto'/>";
     document.getElementById("idname").innerHTML = "Name:" + n;
    }
   </script>
+  
+  <style>
+    
+    
+    .titleBox, .contentBox{
+      border:1px solid black;
+      width:90%;
+      margin-top:10%;
+    }
+    
+    .contentBox{
+    }
+    
+    .idPhoto{
+      width:90%;
+    }
+  </style>
+  
   
 </head>
 
