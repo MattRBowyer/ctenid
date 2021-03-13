@@ -3,17 +3,21 @@
   <script>
     var url = new URL(window.location);
     var params = new URLSearchParams(url.search);
-    var p = params.get('p');
-    var n = params.get('n');
-    var h = params.get('h');
-    var r = params.get('r');
-    var c = params.get('c');
-    var m = params.get('m');
+    var pic = params.get('p');
+    var idName = params.get('n');
+    var height = params.get('h');
+    var rankFull = params.get('r');
+    var rankCode = params.get('c');
+    var issuer = params.get('i');
+    var expiryDate = params.get('d');
     
    function myFunction(){
     document.getElementById("photo").innerHTML = "<img src='" + p + "' class='idPhoto'/>";
-    document.getElementById("idname").innerHTML = "Name:" + n;
-     document.getElementById("rank").innerHTML = "Name:" + r;
+    document.getElementById("idName").innerHTML =  idName;
+    document.getElementById("rank").innerHTML =  + rankFull;
+    document.getElementById("rankCode").innerHTML =  + rankCode;
+     document.getElementById("cardExpiry").innerHTML =  + expiryDate;
+     document.getElementById("rankCode").innerHTML =  + rankCode;
    }
   </script>
   
@@ -54,13 +58,25 @@
    <div class="contentBox">
      <table>
          <tr>
-            <td>Rank</td>
-            <td><span id="rank">
+            <td>Rank:</td>
+            <td><span id="rank"> (<span id="rankCode">)
                </span></td>
         </tr>
             <tr>
-            <td>Name</td>
-            <td><span id="idname">
+            <td>Name:</td>
+            <td><span id="idName">
+               </span></td>
+        </tr>  
+       
+                   <tr>
+            <td>Name:</td>
+            <td><span id="height">
+               </span></td>
+        </tr>  
+       
+                   <tr>
+            <td>Name:</td>
+            <td><span id="cardExpiry">
                </span></td>
         </tr>  
      
