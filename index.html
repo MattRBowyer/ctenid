@@ -11,12 +11,12 @@
     var issuer = params.get('i');
     var expiryDate = params.get('d');
     
-   function myFunction(){
+   function writeHTML(){
     document.getElementById("photo").innerHTML = "<img src='" + pic + "' class='idPhoto'/>";
     document.getElementById("idName").innerHTML =  idName;
     document.getElementById("rank").innerHTML =  + rankFull;
     document.getElementById("rankCode").innerHTML =  + rankCode;
-     document.getElementById("cardExpiry").innerHTML =  + expiryDate;
+    document.getElementById("cardExpiry").innerHTML =  + expiryDate;
     
    }
   </script>
@@ -50,7 +50,7 @@
   
 </head>
 
-<body onload="myFunction()">
+<body onload="writeHTML()">
   <div id="title" class="titleBox">GREGASIAN MININSTRY OF THE INTERIOR</div>
   <div id="photo" class="contentBox">
   </div>
