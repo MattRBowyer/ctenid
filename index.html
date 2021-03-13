@@ -25,18 +25,22 @@
       titleText = "GREGASIAN AIR FORCE";
       mainColour = "#c9daf8";
       backColour = "#c9daf8";
+      textColour = "black";
     } else if (issuer == "n") {
       titleText = "GREGASIAN NAVY";
-      mainColour = "#c9daf8";
+      mainColour = "#134f5c";
       backColour = "#c9daf8";
+      textColour = "white";
     } else if (issuer == "a") {
       titleText = "GREGASIAN ARMY";
       mainColour = "#c9daf8";
       backColour = "#c9daf8";
+      textColour = "white";
     }else if (issuer == "cs") {
       titleText = "GREGASIAN MINISTRY OF DEFENCE";
       mainColour = "#c9daf8";
-      backColour = "#c9daf8"; 
+      backColour = "#c9daf8";
+      textColour = "white"; 
     }
      
      
@@ -52,6 +56,7 @@
     document.getElementById("titleBox").innerHTML =     titleText;
      
     document.getElementById("titleBox").style.backgroundColor = mainColour;
+     document.getElementById("titleBox").style.color = textColour;
      
      
    }
@@ -90,6 +95,7 @@
     
     table{
       font-size:36px;
+      margin-right:5%;
     }
   </style>
   
