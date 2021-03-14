@@ -55,7 +55,7 @@
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
     document.getElementById("serviceNo").innerHTML =    serviceNo;  
-    document.getElementById("titleText").innerHTML =     titleText;
+    document.getElementById("titleBox").innerHTML =     titleText;
     document.getElementById("flagImg").innerHTML =     "<img src='https://docs.google.com/drawings/d/e/" + flagImg + "' style='width:15%;'/>";
      
     document.getElementById("titleBox").style.backgroundColor = mainColour;
@@ -110,15 +110,11 @@
 </head>
 
 <body onload="writeHTML()">
-  <div id="titleBox" class="titleBox"> 
-      <table>
-        <tr>
-            <td id="titleText"> </td>
-            <td id="flagImg"> </td>
-          </tr>
-                                    
-        </table>
+  <div id="titleBox" class="titleBox">
       </div>
+  
+  
+  <div id="flagImg" style="float:right;width:25%;"></div>
   <div id="photo" class="contentBox">
   </div>
 
