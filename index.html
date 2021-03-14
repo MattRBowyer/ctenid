@@ -55,7 +55,7 @@
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
     document.getElementById("serviceNo").innerHTML =    serviceNo;  
-    document.getElementById("titleBox").innerHTML =     titleText;
+    document.getElementById("titleText").innerHTML =     titleText;
      
     document.getElementById("titleBox").style.backgroundColor = mainColour;
     document.getElementById("titleBox").style.color = textColour;
@@ -110,7 +110,7 @@
 
 <body onload="writeHTML()">
   <div  class="titleBox"> 
-      <div id="titleBox" style="float:left; width:80%;"></div> 
+      <div id="titleText" style="float:left; width:80%;"></div> 
      <div id="flagImg" style="float:left; width:19%;"></div>                            
       </div>
   <div id="photo" class="contentBox">
@@ -119,7 +119,7 @@
    <div class="contentBox">
      <table>
          <tr>
-            <td>Rank:</td>
+            <td style="width:45%;">Rank:</td>
            <td><span class="dataEntry" id="rankFull"></span> (<span id="rankCode"></span>)</td>
         </tr>
             <tr>
