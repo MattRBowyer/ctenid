@@ -93,9 +93,16 @@
     document.getElementById("heightM").innerHTML =      heightM;
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
-    document.getElementById("serviceNo").innerHTML =    serviceNo;  
-    document.getElementById("titleBox").innerHTML =     titleText;
     document.getElementById("flagImg").innerHTML =     "<img src='https://docs.google.com/drawings/d/e/" + flagImg + "' style='width:100%;'/>";
+     document.getElementById("titleBox").innerHTML =     titleText;
+     
+    if (numberCaption = "") {
+      document.getElementById("serviceNo").innerHTML =    serviceNo;  
+    } else {
+      document.getElementById("serviceNo").innerHTML =    serviceNo; 
+    }
+     
+     
      
     document.getElementById("titleBox").style.backgroundColor = mainColour;
     document.getElementById("titleBox").style.color = textColour;
@@ -177,7 +184,7 @@
         </tr>  
   <tr></tr>
                    <tr>
-            <td>Warrant number:</td>
+            <td>Service number:</td>
             <td><span class="dataEntry" id="serviceNo"></span></td>
         </tr>  
                     <tr>
