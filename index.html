@@ -17,6 +17,7 @@
     var titleText;
     var mainColour;
     var backColour;
+    var flagImg;
     
     
    function writeHTML(){
@@ -26,6 +27,7 @@
       mainColour = "#c9daf8";
       backColour = "#c9daf8";
       textColour = "black";
+      flagImg = "2PACX-1vR8aLAL5joOt1i9yN-fCn8eoQWGvXtyxOsYXWPNvTz9Zsxo4Vk8tbwgiH1EklwEBca-gIu22yHY-1uZ/pub?w=416&h=577"
     } else if (issuer == "n") {
       titleText = "GREGASIAN NAVY";
       mainColour = "#134f5c";
@@ -107,7 +109,10 @@
 </head>
 
 <body onload="writeHTML()">
-  <div id="titleBox" class="titleBox">GREGASIAN MININSTRY OF THE INTERIOR</div>
+  <div  class="titleBox"> 
+      <div id="titleBox" style="float:left; width:80%;"></div> 
+     <div id="flagImg" style="float:left; width:19%;"></div>                            
+      </div>
   <div id="photo" class="contentBox">
   </div>
 
