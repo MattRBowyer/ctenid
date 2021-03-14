@@ -97,9 +97,9 @@
      document.getElementById("titleBox").innerHTML =     titleText;
      
     if (numberCaption = "") {
-      document.getElementById("serviceNo").innerHTML =    serviceNo;  
+      document.getElementById("serviceNo").innerHTML =    "";  
     } else {
-      document.getElementById("serviceNo").innerHTML =    serviceNo; 
+      document.getElementById("serviceNo").innerHTML =    "<td>Service number:</td><td><span class='dataEntry'></span></td>"; 
     }
      
      
@@ -183,9 +183,8 @@
             <td><span class="dataEntry" id="heightM"></span>m (<span id="heightF"></span>ft </span><span id="heightIn"></span>in)</td>
         </tr>  
   <tr></tr>
-                   <tr>
-            <td>Service number:</td>
-            <td><span class="dataEntry" id="serviceNo"></span></td>
+                   <tr id="serviceNo">
+            
         </tr>  
                     <tr>
             <td>Card expiry date:</td>
