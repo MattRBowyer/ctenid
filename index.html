@@ -89,7 +89,6 @@
       textColour = "white"; 
       flagImg = "2PACX-1vT8NtkyPfRjo5gU_rjiOplm36eyN4g3HUw2l7qjEMmEz4Wq1PKhYUUFa0dGuzf3O_JJes3vmgCp-1bA/pub?w=623&h=866";
       rankCode = "";
-      numberCaption = "Number";
       idName = "Not found in system";
       rankFull = idName;
       rankCode = "";
@@ -115,6 +114,8 @@
      
     if (numberCaption == "") {
       document.getElementById("serviceNo").innerHTML =    "";  
+    } else if (issuer == "fake") {
+      document.getElementById("serviceNo").innerHTML =  "<td>Number:</td><td><span class='dataEntry'>Not found in system</span></td>";
     } else {
       document.getElementById("serviceNo").innerHTML =    "<td>" + numberCaption + ":</td><td><span class='dataEntry'>" + serviceNo + "</span></td>"; 
     }
