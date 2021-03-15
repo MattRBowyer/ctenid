@@ -82,6 +82,23 @@
       flagImg = "2PACX-1vT8NtkyPfRjo5gU_rjiOplm36eyN4g3HUw2l7qjEMmEz4Wq1PKhYUUFa0dGuzf3O_JJes3vmgCp-1bA/pub?w=623&h=866";
       rankCode = "";
       numberCaption = "Warrant number";
+    }else if (issuer == "fake") {
+      titleText = "GREGASIAN INTER-DEPARTMENT ID SYSTEM";
+      mainColour = "black";
+      backColour = "gray";
+      textColour = "white"; 
+      flagImg = "2PACX-1vT8NtkyPfRjo5gU_rjiOplm36eyN4g3HUw2l7qjEMmEz4Wq1PKhYUUFa0dGuzf3O_JJes3vmgCp-1bA/pub?w=623&h=866";
+      rankCode = "";
+      numberCaption = "Number";
+      idName = "Not found in system";
+      rankFull = idName;
+      rankCode = "";
+      expiryDate = idName;
+      height = 0;
+      heightM = 0;
+      heightIn = 0;
+      heightF = 0;
+      idPhoto = "https://tinyurl.com/placeholderimg";
     }
      
      
@@ -94,7 +111,7 @@
     document.getElementById("heightIn").innerHTML =     heightIn-heightF*12;
     document.getElementById("heightF").innerHTML =      heightF;
     document.getElementById("flagImg").innerHTML =     "<img src='https://docs.google.com/drawings/d/e/" + flagImg + "' style='width:100%;'/>";
-     document.getElementById("titleBox").innerHTML =     titleText;
+    document.getElementById("titleBox").innerHTML =     titleText;
      
     if (numberCaption == "") {
       document.getElementById("serviceNo").innerHTML =    "";  
